@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Hamburgueria BD</title>
+    <style>
+        nav {
+          height: 5em;
+        }
+
+        footer {
+          height: 7em;
+        }
+
+    
+
+        .whatsapp-btn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+        }
+
+        .categoria-img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+
+                  <a class="navbar-brand" href="#">
+                    <img src="img/icon.png" alt="Bootstrap" width="30" height="24">
+                    Hamrburgueria BD
+                    
+                  </a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#pedidos">Fazer pedido</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link inactive" href="">Feito por Gabriel Pirovane</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <article>
+            <div class="position-relative text-center text-white">
+                <img class="img-fluid mt-auto" src="img/h1.jpg" alt="hamburguer">
+                <a href="#" class="whatsapp-btn btn btn-success shadow"> <i class="bi bi-whatsapp"></i> Pedir no Whatsapp</a>
+                <div class="position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 p-3
+                    rounded">
+                    <h1 class="display-2">Hamburgueria BD</h1>
+                    <p class="lead">A melhor da cidade!</p>
+                </div>
+                
+            </div>
+
+            <!-- <div class="mt-4">
+                <img src="img/planta.jpg" alt="planta" class="float-start rounded-circle me-3">
+                <p class="display-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus perspiciatis rem nam incidunt ea nesciunt natus possimus, inventore maiores velit obcaecati nisi quas quia accusantium dicta quo dolorum dolores alias.</p>
+            </div> -->
+            <div class="container mt-3 alert alert-danger alert-dismissable fade show text-center" role="alert">
+              <i class="bi-info-circle fs-2 ">
+                Promoção: 40% de desconto na compra de 2 ou mais produtos!
+              </i>
+              <button class="btn-close" data-bs-dismiss="alert"></button>
+
+            </div>
+
+            <div class="container-fluid mt-5">
+              <h2 class="fs-3">Categorias <span class="badge bg-success">Novidades 🎉</span></h2>
+            </div>
+
+            <div class="container mt-5">
+              <div class="row row-cols-5 g-5 justify-content-center">
+                <div class="col">
+                  <span class="badge bg-warning"> 🏛️Clássico</span>
+                  <img src="img/h2.jpg" alt="" class="categoria-img rounded-circle">
+                </div>
+                
+                <div class="col">
+                  <span class="badge bg-success"> 🌱Vegano</span>
+                  <img src="img/h2.jpg" alt="" class="categoria-img rounded-circle">
+                </div>
+                
+                <div class="col">
+                  <span class="badge bg-warning"> 🐔Frango</span>
+                  <img src="img/h2.jpg" alt="" class="categoria-img rounded-circle">
+                </div>
+
+                <div class="col">
+                  <span class="badge bg-danger"> 🍖Picanha</span>
+                  <img src="img/h2.jpg" alt="" class="categoria-img rounded-circle">
+                </div>
+
+                <div class="col">
+                  <span class="badge bg-danger"> 🔥Mais pedido</span>
+                  <img src="img/h2.jpg" alt="" class="categoria-img rounded-circle">
+                </div>
+            </div>
+            
+              
+              
+            </div>
+            
+            <div class="container-fluid mt-5 mb-5" id="pedidos">
+              <h2 class="fs-3">Lanches disponíveis</h2> <br>
+              <div class="row row-cols-3 g-3">
+                <div class="col">
+                    <div class="card position-relative">
+                      <div class="position-absolute top-0 end-0 m-2" style="z-index: 1;">
+                        <i class="bi bi-cart3 fs-3 position-relative"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          1
+                        </span>
+                      </div>
+                      <img class="card-img-top" src="img/h3.png" alt="Title" />
+                      <div class="card-body">
+                        <h4 class="card-title">Lanche 1</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, consectetur.</p>
+                      </div>
+                      <div class="card-footer p-2">
+                        <button class="btn btn-success w-100">
+                          <i class="bi bi-bag-plus"></i>
+                          Comprar
+                        </button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="img/h3.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Lanche 2</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
+                                consectetur.</p>
+                        </div>
+                        <div class="card-footer p-2">
+                         <button class="btn btn-success w-100">
+                            <i class="bi bi-bag-plus"></i>
+                             Comprar
+                          </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="img/h3.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title">Lanche 3</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
+                                consectetur.</p>
+                        </div>
+                        <div class="card-footer p-2 g">
+
+                            <button class="btn btn-success w-100">
+                            <i class="bi bi-bag-plus"></i>
+                             Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+           
+            
+            
+            
+            <a href="#" class="whatsapp-btn btn btn-success shadow"> <i class="bi bi-whatsapp"></i> Pedir no Whatsapp</a>
+        </article>
+
+        <footer class="position-relative text-bg-dark p-3 text-center ">
+            <p class="mt-2"> &copy; 2025 Lanchonete BD. Todos os direitos reservados </p>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-twitter-x"></i>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+</html>
